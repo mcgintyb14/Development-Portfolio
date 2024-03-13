@@ -6,16 +6,16 @@ function Portfolio() {
     <section id="Work">
       <h2 id="Work-Header">Work</h2>
       <div className="work-links">
-        <a id="work-links1" href="https://github.com/mcgintyb14/First-Challenge" target="_blank">
+        <a id="work-links1" href="https://github.com/JessicaDubina/exam-builder" target="_blank">
           <div className="card" id="card1">
-            <h3>Coding Study Guide</h3>
-            <h4>HTML</h4>
+            <h3>Exam Builder</h3>
+            <h4>MERN Stack</h4>
           </div>
         </a>
-        <a id="work-links2" href="https://github.com/mcgintyb14/Password-Generator" target="_blank">
+        <a id="work-links2" href="https://github.com/mcgintyb14/E-commerce-Server" target="_blank">
           <div className="card">
-            <h3>Random Password Generator</h3>
-            <h4>HTML+CSS+Javascript</h4>
+            <h3>E-commerce Back End</h3>
+            <h4>Javascript / SQL</h4>
           </div>
         </a>
         <a id="work-links3" href="#" target="_blank">
