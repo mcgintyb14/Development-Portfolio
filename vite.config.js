@@ -1,11 +1,15 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react'; // Import the react plugin
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react()], // Add the react plugin to the plugins array
   server: {
     port: 3000,
     open: true
-  }
-})
+  },
+  build: {
+    rollupOptions: {
+      input: './index.html', // Path to your index.js file
+    },
+  },
+});
