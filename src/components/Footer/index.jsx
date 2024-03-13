@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { useNavigate } from 'react-router-dom';
+import '../../index.css';
 
 function Footer() {
   const githubLink = 'https://github.com/mcgintyb14';
@@ -16,12 +17,12 @@ function Footer() {
     <footer style={{ display: 'flex', justifyContent: 'center' }}>
       <div style={{ margin: '0 10px' }}>
         <a href={githubLink} target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faGithub} size="2x" style={{ border: '3px solid transparent' }} />
+          <FontAwesomeIcon icon={faGithub} size="2x" style={{ border: '3px solid transparent', color: 'white' }} />
         </a>
       </div>
       <div style={{ margin: '0 10px' }}>
         <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faLinkedinIn} size="2x" style={{ border: '3px solid transparent' }} />
+          <FontAwesomeIcon icon={faLinkedinIn} size="2x" style={{ border: '3px solid transparent', color: 'white' }} />
         </a>
       </div>
 

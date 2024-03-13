@@ -20,6 +20,8 @@ body {
   --page-margin: 100px;
 }
 
+
+
 /* The below code defines the layout for the body of the HTML, defining it as a flexbox layout with its children sections 
 dislpayed as a column with a black background color */
 
@@ -94,6 +96,12 @@ body {
   padding-bottom: 10px;
 }
 
+#about-header,
+#Work-Header {
+  text-align: center;
+}
+
+
 #work-links1,
 #work-links2,
 #work-links3,
@@ -148,6 +156,17 @@ whenever they are hovered, they remove the filter making the images clear. */
 
 #work-links4 {
   background-image: url(../public/photo-1589802829985-817e51171b92.avif);
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #157885;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 
 /* The below code specifies that the "Contact Me" section (inclusive of its children) will have no margin or padding to the right */
