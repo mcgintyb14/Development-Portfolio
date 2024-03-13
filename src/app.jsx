@@ -1,13 +1,18 @@
+// App.jsx
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Main from './main'; // Importing the default export from main.jsx
+import Main from './main';
+import Layout from './components/Layout/layout'; // Importing the Layout component
 
 const App = () => {
   return (
     <React.StrictMode>
-      <Main />
+      <Layout>
+        <Main />
+      </Layout>
     </React.StrictMode>
   );
 };
 
-export default App; // Exporting App as default
+export default App;

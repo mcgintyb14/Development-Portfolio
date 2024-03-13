@@ -1,10 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import React from 'react';
-import ReactDOM from 'react-dom';
 import App from './app.jsx';
 import Resume from './components/Pages/resume.jsx'; // Import your Resume component
-import Header from './components/Header/index';
-import Footer from './components/Footer/index'; // Import your Footer component
 import Home from './components/Pages/home.jsx';
 import Portfolio from './components/Pages/portfolio.jsx';
 import AboutMe from './components/Pages/aboutme.jsx';
