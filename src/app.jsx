@@ -1,23 +1,15 @@
-// App.jsx
+// Bringing in the required import from 'react-router-dom'
+import { Outlet } from 'react-router-dom';
+import Nav from './components/Nav/Nav';
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Main from './main'; // Importing the default export from main.jsx
-
-// Assuming you have configured your router in main.jsx
-import router from './main'; 
-
-const App = () => {
-  const routerInstance = createBrowserRouter(router);
-
+function App() {
+  // The Outlet component will conditionally swap between the different pages according to the URL
   return (
-    <React.StrictMode>
-      <RouterProvider router={routerInstance}>
-        <Main />
-      </RouterProvider>
-    </React.StrictMode>
+    <>
+      <Nav />
+      <Outlet />
+    </>
   );
-};
+}
 
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+export default App;
