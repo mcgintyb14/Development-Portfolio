@@ -8,7 +8,6 @@ import AboutMe from './components/Pages/aboutme.jsx';
 import ContactMe from './components/Pages/contactme.jsx';
 
 // Define the main function to export
-function Main() {
   const router = createBrowserRouter([
     {
       path: '/',
@@ -39,10 +38,6 @@ function Main() {
     }
   ]);
 
-  return (
-    <RouterProvider router={router} />
-  );
-}
-
-// Export the Main function as default
-export default Main;
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <RouterProvider router={router} />
+)
