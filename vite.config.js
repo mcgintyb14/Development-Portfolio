@@ -8,8 +8,6 @@ export default defineConfig({
     open: true
   },
   build: {
-    rollupOptions: {
-      input: './index.html', // Path to your index.js file
-    },
+    outDir: 'dist',
   },
 });
