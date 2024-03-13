@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+imp
 
 function Header() {
   // Define the background image style
   const headerStyle = {
-    backgroundImage: '../../public/cover-photo.jpg`}', // Adjust the path to your background image
+    backgroundImage: '../../public/cover-photo.jpg`}',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     height: '200px', // Adjust the height as needed
@@ -22,7 +23,7 @@ function Header() {
       <nav>
         <ul style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}>
           <li>
-            <Link to="/">Resume</Link>
+            <Link to="/resume">Resume</Link>
           </li>
           <li>
             <Link to="/contact">Contact Me</Link>
@@ -31,7 +32,7 @@ function Header() {
             <Link to="/portfolio">Portfolio</Link>
           </li>
           <li>
-            <Link to="/about">About Me</Link>
+            <Link to="/aboutme">About Me</Link>
           </li>
         </ul>
       </nav>

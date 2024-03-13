@@ -6,3 +6,538 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* The below code defines root variables for background color and page margin that are applied to elements throughout the page */
+
+:root {
+  --background-color: rgb(31, 150, 150);
+  --page-margin: 100px;
+}
+
+/* The below code defines the layout for the body of the HTML, defining it as a flexbox layout with its children sections 
+dislpayed as a column with a black background color */
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+/* The below code defines the layout of the header section of the page, which is displayed using flexbox as a row, and with the width
+of the child elements being displayed as a row. The flexbox layout also helps with responsiveness */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
+  justify-content: space-between;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(43, 45, 46);
+  color: white;
+  box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* The below code defines the layout of my name within the header element. The position of the name is a relative position based
+on the position of the parent element (header), and is fixed to stay on the left hand side of the screen, with the text being 
+fixed in its alignment as well. */
+
+.name {
+  align-self: flex-start;
+  position: relative;
+  top: 20px;
+  background-color: var(--background-color);
+  color: white;
+  width: 20%;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 10px;
+  font-size: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 600;
+}
+
+#selfie {
+  height: 150px;
+  width: 130px;
+  display: inline-block;
+}
+
+
+/* The below code is defining the layout of the links in the header of the page. This is a flexbox layout to display the links as a row, and the flexwrap
+property is ensuring that as the screen gets smaller, the links will begin to wrap under each other to make more space */
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  margin-top: 30px;
+  margin-right: 50px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+
+}
+
+/* The below code is ensuring that each list item within the "links" class is displayed as an inline block, and that within the "links" container,
+they will be displayed in the center both horizontally and vertically */
+
+.links li {
+  display: inline-block;
+  margin-left: 60px;
+  font-size: 24px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+/* The below code is simply specifying that the links themselves (a) will be in white font with set padding around them */
+
+.links a {
+  color: white;
+  font-weight: normal; 
+  padding: 10px 20px;
+}
+
+/* The below code specifies that whenever a user hovers over any of the links in the header, the font will become bold and change to a beige color */
+
+.links a:hover {
+  color: beige;
+  font-weight: bold;
+  margin-left: -5.5px;
+}
+
+/* The below code simply defines that all text within any sections of the page will be in white */
+
+section {
+  color: white
+}
+
+/* The below code is what drives the "subtitle" background image displayed below the header. This css code is ensuring that the width of the image
+spans 100% of the screen at a set height of 400px. */
+
+#subtitle {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  background-color: blue;
+  background-image: url(./Images/widescreen-blue-moon-qa91zekh1cl86k1k.jpg);
+  background-position: top;
+  background-size: cover;
+}
+
+/* The below code is defining the sub-header displayed on top of the background image. This is defining the grey background color of the box 
+as well as the black text color of the sub-header itself. The positioning layout was defined so that the sub-header is in a fixed position
+on the page 
+Also added a linear gradient to make the box more aesthetic*/
+
+#subtitle-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, var(--background-color), white); 
+  color: black;
+  height: 60px;
+  width: 140%;
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+  top: 84%;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* The below code is defining the styles of each H2 header on the page, seen on the left-hand side of the screen. This is done using
+flex properties in the first line of code, and ensuring that the text is aligned to the right hand side of the container. The border 
+property in this line of code is what gives the consistent "line" down the left hand side of the screen. */
+
+#about-header,
+#Work-Header,
+#contact-header {
+ flex: 0 0 20%;
+ text-align: right;
+ padding-right: 15px;
+ border-right: 4px solid var(--background-color);
+ font-size: 4vw;
+ line-height: 1.1;
+}
+
+/* The below code defines the layout of the container with the id "About Me" in the HTML code. This code ensures that this specific container
+displays as a row on the page, maximizing the space between the child elements. */
+
+
+/* The below code is defining the style of the paragraphs within the 'About Me' section of the page. This is again done using flexbox
+but this time it is specifying it to display as a column (otherwise the paragraphs would display as a row side-by-side. */
+
+#About-Me p {
+  text-align: left;
+  font-size: 25px;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-right: 5%;
+}
+
+/* The below code is providing properties for the "bio" ID container which contains both paragraphs within the 'About Me' section. 
+This is specific to the container itself and not the child elements (ie the paragraphs) */
+
+#bio {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  margin-left: 30px;
+  margin-right: 20px;
+  width: 100%;
+}
+
+/* The below code is simply defining the layout of the individual paragraphs within the 'About Me' section. This is saying that the paragraphs
+should be 80% the width of the container (the parent element with id "bio") */
+
+#bio p {
+  text-align: justify;
+  width: 80%;
+}
+
+/* The below code is defining the layout of each of the three sections in the body of the page, each defined by specifc IDs shown 
+below. What this is doing is making sure each of these sections display as a row and have defined margins and paddings that are
+consistent throughout the page. This is to make sure the borders are all aligned. */
+
+#Work,
+#Contact-Me,
+#About-Me {
+  display: flex;
+  flex-direction: row;
+  margin-top: 200px;
+  margin-right: 0px;
+  margin-left: 60px;
+  padding-right: 0;
+}
+
+/* The below code is defining the style of each of the cards / links within the "Work" section of the page. This is defining a flexbox layout
+to display the cards as a row, and to have them aligned to the center of the container. It is also ensuring they have flexwrap so that
+they will wrap around when the screen narrows.*/
+
+.work-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 100px;
+  margin-left: 15px;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+/* The below code is defining the style of the links (i.e. cards) themselves. This is making sure they flex display as a row with the 
+main text being displayed at the left (flex start). */
+
+.work-links div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 40%;
+  width: 70%;
+  font-size: 13px;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-image: linear-gradient(to bottom, var(--background-color), white); 
+  position: relative;
+  top: 60%;
+  border-radius: 8px;
+}
+
+/* This makes sure that the card tagged to the largest link will have a different height, width, and font size */
+
+#card1 {
+  height: 100px;
+  width: 20%;
+  font-size: 20px;
+}
+
+.work-links div h4{
+  margin-top: 10px;
+  font-size: 80%;
+  padding-bottom: 10px;
+}
+
+/* The below code is defining the specifc properties of each individual card within the "Work" section. This is mainly setting 
+consistent sizes for each card, as well as defining their positions relative to each other. Background properties defined here apply
+to the background images applied to each individual card. */
+
+#work-links1,
+#work-links2,
+#work-links3,
+#work-links4 {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-width: 200px;
+  min-height: 200px;
+  max-width: 300px;
+  max-height: 200px;
+  margin-right: 10px;
+  color: white;
+  filter: blur(1px);
+  transition: .2s ease;
+  margin: 10px;
+  margin-right: 60px;
+}
+
+/* The below code is adding a hover property to each image. Specifcally, each card is given a default "blur" filter set above, and
+whenever they are hovered, they remove the filter making the images clear. */
+
+#work-links1:hover,
+#work-links2:hover,
+#work-links3:hover,
+#work-links4:hover {
+  filter: none;
+  border: solid var(--background-color) 5px;
+}
+
+/* The below code is specifiying a specifc size for the first image / link in the Work section to make it larger than the rest. */
+
+#work-links1 {
+  background-image: url(./Images/nature-stock-photo.jpg);
+  min-height: 400px;
+  min-width: 90%;
+  max-height: 400px;
+  max-width: 400px;
+
+}
+
+/* The below three lines of code set background images for the different links. */
+
+#work-links2 {
+  background-image: url(./Images/beach-quotes-1559667853.jpg);
+
+}
+
+#work-links3 {
+  background-image: url(./Images/nala.jpg);
+}
+
+#work-links4 {
+  background-image: url(./Images/photo-1589802829985-817e51171b92.avif);
+}
+
+/* The below code specifies that the "Contact Me" section (inclusive of its children) will have no margin or padding to the right */
+
+#Contact-Me {
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+/* The below code is defining the style of the container for the contact links at the bottom. This is making sure this container displays the links / contacts in a row, spaced evenly, and with set padding between them. */
+
+#Contact-Links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-left: 1px;
+  font-size: 20px;
+}
+
+/* The below code targets the specifc links within the "Contact Me" section, ensuring that the links again display as a row, aligned to the center, and with even space between them.
+This also makes sure the text color of each link is white instead of the default */
+
+#Contact-Links a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 80px;
+  padding-bottom: 3px;
+  padding-top: 50px;
+  color: white;
+  margin-right: 0px;
+}
+
+/* The below code represents different media queries for custom breakpoints for the page. This was done so that the page is responsive to any resolution changes */
+
+@media screen and (max-width: 1300px ) {
+
+  #Work, 
+  #About-Me,
+  #Contact-Me {
+      margin-left: 10px;
+  }
+
+  #About-Me h1,
+  #Work h1,
+  #Contact-Me h1 {
+      font-size: 30px;
+      border: none;
+  }
+
+  header {
+      height: 150%;
+      width: 100%;
+  }
+
+  .name,
+  .links li {
+      font-size: 20px;
+     justify-content: flex-start;
+     flex-wrap: wrap;
+     margin-left: 0px;
+  }
+
+  .name {
+      position: relative;
+      top: 10px;
+      height: 35px;
+  }
+
+  .links a {
+      display: flex;
+      flex-direction: row;
+      margin-right: 0px;
+      justify-content: flex-start;
+  }
+
+  #bio p{
+      font-size: 16px;
+  }
+
+  #work-links1,
+  #work-links2,
+  #work-links3,
+  #work-links4 {
+      height: 220px;
+      width: 210px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+  .About-Me {
+      display: flex;
+      flex-direction: row;
+  }
+
+  main {
+      display: flex;
+      flex-direction: column;
+  }
+
+  #Contact-Links a {
+      font-size: 12px;
+      margin-bottom: 30px;
+  }
+
+  .work-links a {
+      width: 100px;
+      height: 100px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  
+
+  .header {
+     display: flex;
+     flex-direction: column;
+      height: 20%;
+  }
+
+  .name {
+      font-size: 13px;
+      width: 40%;
+  }
+
+  .work-links {
+      padding-left: 10px;
+  }
+
+  #selfie {
+      margin-left: 20px;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+  }
+ 
+  #work-links1,
+  #work-links2,
+  #work-links3,
+  #work-links4 {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      max-width: 100px;
+      max-height: 100px;
+      margin-right: 10px;
+      color: white;
+      filter: blur(1px);
+      transition: .2s ease;
+      margin: 10px;
+  }
+
+  #work-links1 {
+      width: 100px;
+      max-height: 50px;
+  }
+
+  .work-links div {
+      font-size: 50%;
+      height: 30%
+  }
+
+#Contact-Links a {
+  margin: 10px;
+}
+
+#subtitle-header {
+  width: 150%;
+  font-size: 14px;
+}
+
+#selfie {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+}   
+
+
+@media screen and (max-width: 768px ) {
+  #selfie {
+      margin-left: 20px;
+  } 
+
+}
+
+@media screen and (max-width: 735px) {
+  .name {
+      font-size: 13px;
+      /* width: 45%; */
+  }
+
+  .links li {
+      font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  #bio {
+      font-size: 5px;
+  }
+}
