@@ -21,8 +21,8 @@ body {
 }
 
 #root {
-  background-color: rgb(250, 241, 215);
-  height: 100vh;
+  background-image: url(../public/light-background.jpg);
+  height: 100%;
 }
 
 /* The below code defines the layout for the body of the HTML, defining it as a flexbox layout with its children sections 
@@ -118,7 +118,7 @@ body {
   max-height: 200px;
   margin-right: 10px;
   color: white;
-  filter: blur(1px);
+  filter: blur(.5px);
   transition: .2s ease;
   margin: 10px;
   margin-right: 60px;

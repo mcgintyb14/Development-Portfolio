@@ -14,7 +14,7 @@ function ContactMe() {
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100vh' }}>
       <h1 style={{ marginBottom: '40px', marginTop: '40px'}}>Contact Me</h1>
       <form onSubmit={handleSubmit}>
         <div style={{ marginBottom: '20px' }}>

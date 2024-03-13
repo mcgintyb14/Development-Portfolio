@@ -5,7 +5,7 @@ function Portfolio() {
   return (
     <section id="Work">
       <h2 id="Work-Header">Work</h2>
-      <div className="work-links">
+      <div className="work-links" style={{ marginBottom: '200px' }}> {/* Add margin bottom */}
         <a id="work-links1" href="https://github.com/JessicaDubina/exam-builder" target="_blank">
           <div className="card" id="card1">
             <h3>Exam Builder</h3>
