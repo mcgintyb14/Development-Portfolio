@@ -87,10 +87,16 @@ body {
 
 /* This makes sure that the card tagged to the largest link will have a different height, width, and font size */
 
-#card1 {
+#card1,
+#card2,
+#card3,
+#card4,
+#card5 {
   height: 100px;
-  width: 20%;
+  width: 30%;
   font-size: 20px;
+  position: relative;
+  top: 70%;
 }
 
 .work-links div h4{
@@ -112,10 +118,6 @@ body {
   position: relative;
   background-size: cover;
   background-position: center;
-  min-width: 200px;
-  min-height: 200px;
-  max-width: 300px;
-  max-height: 200px;
   margin-right: 10px;
   color: white;
   filter: blur(.5px);
@@ -140,13 +142,19 @@ whenever they are hovered, they remove the filter making the images clear. */
 
 #work-links1 {
   background-image: url(../public/exam-builder.jpg);
+}
+
+#work-links1,
+#work-links2,
+#work-links3,
+#work-links4,
+#work-links5 {
   background-size: 'cover';
   background-position: 'top';
   min-height: 400px;
   min-width: 90%;
   max-height: 400px;
   max-width: 400px;
-
 }
 
 /* The below three lines of code set background images for the different links. */
@@ -165,8 +173,6 @@ whenever they are hovered, they remove the filter making the images clear. */
 
 #work-links5 {
   background-image: url(../public/weather.jpg);
-  object-fit: cover;
-  object-position: 25% 25%;
 }
 
 footer {

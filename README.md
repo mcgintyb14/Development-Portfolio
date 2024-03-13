@@ -7,6 +7,10 @@ This application using REACT to display a dynamic portfolio for myself, which di
 
 https://main--bmcginty-portfolio.netlify.app/
 
+## Deployed Screenshot
+
+![Screenshot](public/deployed-screenshot.jpg)
+
 ## Installation
 There are no installation requirements to use this app, and you can simply visit the deployed link above to navigate through all features from the UI.
 
