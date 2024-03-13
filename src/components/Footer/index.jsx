@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedinIn, faEnvelope } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { useNavigate } from 'react-router-dom';
 
 function Footer() {
@@ -25,9 +25,9 @@ function Footer() {
         </a>
       </div>
 
-      <div style={{ margin: '0 10px', cursor: 'pointer' }} onClick={handleEnvelopeClick}>
+      {/* <div style={{ margin: '0 10px', cursor: 'pointer' }} onClick={handleEnvelopeClick}>
       <FontAwesomeIcon icon="fas fa-envelope"/>
-      </div>
+      </div> */}
     </footer>
   );
 }

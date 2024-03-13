@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 function Header() {
   // Define the background image style
   const headerStyle = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/nasa.jpg)`,
+    backgroundImage: `url('/beach-quotes-1559667853.jpg')`, // Use a relative path
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: '200px', // Adjust the height as needed
+    height: '300px', // Adjust the height as needed
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',

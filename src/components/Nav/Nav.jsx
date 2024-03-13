@@ -14,13 +14,13 @@ export default function Nav() {
           About Me
         </Link>,
         <Link key={3} className="nav-link text-light" to="/portfolio">
-          About Me
+          Portfolio
         </Link>,
         <Link key={4} className="nav-link text-light" to="/resume">
-          About Me
+          Resume
         </Link>,
         <Link key={5} className="nav-link text-light" to="/contactme">
-          About Me
+          Contact Me
         </Link>
       ]}
     />
