@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Header() {
   // Define the background image style
   const headerStyle = {
-    backgroundImage: `url('/photo-1589802829985-817e51171b92.avif')`, // Use a relative path
+    backgroundImage: `url('/sunset.jpg')`, // Use a relative path
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     height: '200px', // Adjust the height as needed
@@ -16,6 +16,7 @@ function Header() {
     textAlign: 'center',
     fontSize: '24px',
     boxShadow: '0px 10px 8px rgba(0, 0, 0, 0.1)', // Add box shadow below the header
+    position: 'relative', // Make the header position relative
   };
 
   // Define the style for the list
@@ -50,8 +51,16 @@ function Header() {
     backgroundColor: '#157885', // Change background color for active link
   };
 
+  // Style for your name
+  const nameStyle = {
+    position: 'absolute',
+    left: '10%', // Position 10% from the left side
+    fontSize: '40px', // Set font size to 40px
+  };
+
   return (
     <header style={headerStyle}>
+      <div style={nameStyle}>Brendan McGinty</div>
       <nav>
         <ul style={listStyle}>
           <Link to="/resume" style={{ textDecoration: 'none' }}>

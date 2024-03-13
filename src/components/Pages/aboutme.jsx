@@ -19,6 +19,7 @@ function AboutMe() {
           left: "20%",
           marginBottom: "30px",
           marginTop: "40px",
+          color: " rgb(31, 150, 150)"
         }}
       >
         {" "}

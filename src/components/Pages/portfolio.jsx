@@ -18,16 +18,22 @@ function Portfolio() {
             <h4>Javascript / SQL</h4>
           </div>
         </a>
-        <a id="work-links3" href="#" target="_blank">
+        <a id="work-links3" href="https://github.com/mcgintyb14/Gnome-Rogues" target="_blank">
           <div className="card">
-            <h3>Pet Projects</h3>
-            <h4>Coming Soon</h4>
+            <h3>Gnome Rogues Game</h3>
+            <h4> Javascript / SQL </h4>
           </div>
         </a>
-        <a id="work-links4" href="#" target="_blank">
+        <a id="work-links4" href="https://note-taker-9rv4.onrender.com/" target="_blank">
           <div className="card">
-            <h3>Placeholder Project 2</h3>
-            <h4>Coming Soon</h4>
+            <h3> Note Taker App </h3>
+            <h4> Express / JS </h4>
+          </div>
+        </a>
+        <a id="work-links5" href="https://mcgintyb14.github.io/Weather-Forecaster1/" target="_blank">
+          <div className="card">
+            <h3> Weather Forecaster </h3>
+            <h4> API Calls / Javascript </h4>
           </div>
         </a>
       </div>
