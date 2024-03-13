@@ -5,10 +5,10 @@ import headshot from "../../../public/headshot.jpg"; // Import the headshot imag
 function AboutMe() {
   return (
     <div
-      style={{ width: "80%", margin: "auto", position: "relative" }}
+      style={{ width: "80%", margin: "auto", position: "relative"}}
       id="bio"
     >
-      <h1 style={{ textAlign: "center" }}> About Me </h1>
+      <h1 style={{ position: 'relative', left: '20%', marginBottom: '30px',  marginTop: '40px'}}> About Me </h1>
       <div style={{ display: "flex", alignItems: "flex-start" }}>
         <img
           src={headshot}
@@ -35,7 +35,7 @@ function AboutMe() {
             this page will be used as a portfolio of my work as I continue to
             develop and hone better skills.{" "}
           </p>
-          <h2 style={{ textAlign: "center", marginBottom: "5vh", marginTop: "5vh" }}>
+          <h2 style={{ position: 'relative', left: '5%', marginBottom: '30px', marginTop: '40px'}}>
             Work Bio
           </h2>
           <p>
