@@ -1,8 +1,11 @@
 import React from 'react';
+import '../../index.css';
 
 function Home() {
     return (
-        <div> Hello and testing...</div>
+        <div id='home-container'>
+            <span>Welcome</span>
+        </div>
     )
 }
 

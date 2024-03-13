@@ -7,7 +7,7 @@ function Header() {
     backgroundImage: `url('/beach-quotes-1559667853.jpg')`, // Use a relative path
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: '300px', // Adjust the height as needed
+    height: '250px', // Adjust the height as needed
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',

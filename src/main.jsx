@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ReactDOM from 'react-dom';
-import App from '../src/App.jsx';
+import App from './App.jsx'; // Correct import path
 import Resume from './components/Pages/resume.jsx';
 import Home from './components/Pages/home.jsx';
 import Portfolio from './components/Pages/portfolio.jsx';
