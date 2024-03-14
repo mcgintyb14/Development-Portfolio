@@ -93,7 +93,7 @@ body {
 #card6,
 #card7 {
   height: 100px;
-  width: 40%;
+  width: 30%;
   font-size: 20px;
   position: relative;
   top: 70%;
@@ -232,7 +232,7 @@ footer {
     align-self: center;
   }
   
-  .iframe-container iframe {
+  #resume-doc {
     width: 50%; 
   }
 

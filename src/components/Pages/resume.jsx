@@ -7,6 +7,7 @@ function Resume() {
       <h2 style={{ textAlign: 'center', fontSize: '50px', marginBottom: '80px'}}>Resume</h2>
       <div className="iframe-container"  style={{display: 'flex', justifyContent: 'center', height: '100vh', marginBottom: '200px'}}>
         <iframe
+        id='resume-doc'
           title="Resume"
           src="/resume2024.pdf"
           style={{ border: '1px solid #ddd', width: '75%' }}
