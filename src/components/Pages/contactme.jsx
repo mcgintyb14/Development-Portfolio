@@ -1,7 +1,7 @@
 // ContactMe.jsx
 
 import React, { useState } from 'react';
-import '../../index.css';
+import '../../Assets/contactme.css';
 
 function ContactMe() {
   const [ name, setName ] = useState('');
@@ -16,10 +16,10 @@ function ContactMe() {
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100vh' }}>
+    <div id='main-contact-container' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100vh' }}>
       <h1 style={{ marginBottom: '40px', marginTop: '40px'}}>Contact Me</h1>
       <form onSubmit={handleSubmit}>
-      <div style={{ marginBottom: '20px' }}>
+      <div className='contact-container' style={{ marginBottom: '20px' }}>
           <label htmlFor="name" style={{ marginRight: '10px' }}>Name:</label>
           <input
             type="text"
@@ -30,7 +30,7 @@ function ContactMe() {
             placeholder='Enter your name here'
           />
         </div>
-        <div style={{ marginBottom: '20px' }}>
+        <div className='contact-container' style={{ marginBottom: '20px' }}>
           <label htmlFor="subject" style={{ marginRight: '10px' }}>Subject:</label>
           <input
             type="text"
@@ -41,7 +41,7 @@ function ContactMe() {
             placeholder='Enter the subject of your email here'
           />
         </div>
-        <div style={{ marginBottom: '20px' }}>
+        <div className='contact-container' style={{ marginBottom: '20px' }}>
           <label htmlFor="body" style={{ marginRight: '10px' }}>Body:</label>
           <textarea
             id="body"

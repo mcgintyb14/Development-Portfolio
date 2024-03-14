@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-image: url(../red-yellow.jpg);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -366,30 +367,6 @@ footer {
   #work-links7 {
     background-image: url(../public/astrology.jpg);
   }
-
-  /* ContactMe.jsx CSS */
-#name,
-#subject,
-#body {
-  width: 100px /* Adjust width as needed */
-}
-
-#name {
-  margin-top: 10px; /* Add margin top as needed */
-}
-
-label {
-  margin-right: 10px; /* Add margin right as needed */
-}
-
-textarea {
-  resize: vertical; /* Allow vertical resizing */
-}
-
-button {
-  margin-top: 20px; /* Add margin top as needed */
-}
-
   
   footer {
     position: fixed;

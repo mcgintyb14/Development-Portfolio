@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../../Assets/header.css';
 
 function Header() {
   // Define the background image style
@@ -8,6 +9,7 @@ function Header() {
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     height: '200px', // Adjust the height as needed
+    width: '100%',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
@@ -62,7 +64,7 @@ function Header() {
     <header style={headerStyle}>
       <div style={nameStyle}>Brendan McGinty</div>
       <nav>
-        <ul style={listStyle}>
+        <ul id='ul-container' style={listStyle}>
           <Link to="/resume" style={{ textDecoration: 'none' }}>
             <li style={listItemStyle} activeStyle={activeLinkStyle}>
               Resume
