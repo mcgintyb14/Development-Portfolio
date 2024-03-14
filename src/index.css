@@ -17,7 +17,7 @@ body {
 
 :root {
   --background-color: rgb(31, 150, 150);
-  --page-margin: 100px;
+  --page-margin: 10px;
 }
 
 #root {
@@ -36,7 +36,6 @@ body {
   padding: 0;
 }
 
-#about-header,
 #Work-Header,
 #contact-header {
  flex: 0 0 20%;
@@ -48,8 +47,7 @@ body {
 }
 
 #Work,
-#Contact-Me,
-#About-Me {
+#Contact-Me {
   display: flex;
   flex-direction: row;
   margin-top: 200px;
@@ -113,7 +111,6 @@ body {
   padding-bottom: 10px;
 }
 
-#about-header,
 #Work-Header {
   text-align: center;
 }
@@ -209,15 +206,13 @@ footer {
   padding: 10px;
 }
 
-/* The below code specifies that the "Contact Me" section (inclusive of its children) will have no margin or padding to the right */
-
-#Contact-Me {
-  margin-right: 0px;
-  padding-right: 0px;
-}
 
 
 @media screen and (max-width: 1000px) {
+
+  #root {
+    height: 100vh;
+  }
   
   body {
     display: flex;
@@ -226,8 +221,21 @@ footer {
     margin: 0;
     padding: 0;
   }
+
+  .resume-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .iframe-container {
+    width: 90%;
+    align-self: center;
+  }
   
-  #about-header,
+  .iframe-container iframe {
+    width: 50%; 
+  }
+
   #Work-Header,
   #contact-header {
    flex: 0 0 20%;
@@ -239,8 +247,7 @@ footer {
   }
   
   #Work,
-  #Contact-Me,
-  #About-Me {
+  #Contact-Me {
     display: flex;
     flex-direction: row;
     margin-top: 200px;
@@ -272,7 +279,6 @@ footer {
     margin-left: 5px;
   }
   
-  #about-header,
   #Work-Header {
     text-align: center;
   }
