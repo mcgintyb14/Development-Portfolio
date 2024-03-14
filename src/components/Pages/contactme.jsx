@@ -1,6 +1,7 @@
 // ContactMe.jsx
 
 import React, { useState } from 'react';
+import '../../index.css';
 
 function ContactMe() {
   const [ name, setName ] = useState('');

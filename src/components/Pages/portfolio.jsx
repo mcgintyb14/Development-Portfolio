@@ -36,6 +36,18 @@ function Portfolio() {
             <h4> API Calls / Javascript </h4>
           </div>
         </a>
+        <a id="work-links6" href="https://github.com/mcgintyb14/Scheduler" target="_blank" style={{ width: '90%', marginBottom: '20px' }}>
+          <div className="card" id="card6">
+            <h3> Agenda Builder </h3>
+            <h4> Dayjs, Jquery </h4>
+          </div>
+        </a>
+        <a id="work-links7" href="https://github.com/hstephan23/astrology-project" target="_blank" style={{ width: '90%', marginBottom: '20px' }}>
+          <div className="card" id="card7">
+            <h3> Horoscope Generator </h3>
+            <h4> Dayjs, Javascript </h4>
+          </div>
+        </a>
       </div>
     </section>
   );

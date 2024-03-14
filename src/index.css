@@ -79,7 +79,7 @@ body {
   color: black;
   margin-left: 10px;
   margin-right: 10px;
-  background-image: linear-gradient(to bottom, maroon, white); 
+  background-image: linear-gradient(to bottom, orange, white); 
   position: relative;
   top: 60%;
   border-radius: 8px;
@@ -91,12 +91,20 @@ body {
 #card2,
 #card3,
 #card4,
-#card5 {
+#card5,
+#card6,
+#card7 {
   height: 100px;
-  width: 30%;
+  width: 40%;
   font-size: 20px;
   position: relative;
   top: 70%;
+}
+
+.work-links div h3{
+  margin-top: 10px;
+  font-size: 120%;
+  margin-left: 5px;
 }
 
 .work-links div h4{
@@ -115,7 +123,9 @@ body {
 #work-links2,
 #work-links3,
 #work-links4,
-#work-links5 {
+#work-links5,
+#work-links6,
+#work-links7 {
   position: relative;
   background-size: cover;
   background-position: center;
@@ -134,7 +144,9 @@ whenever they are hovered, they remove the filter making the images clear. */
 #work-links2:hover,
 #work-links3:hover,
 #work-links4:hover,
-#work-links5:hover {
+#work-links5:hover,
+#work-links6:hover,
+#work-links7:hover {
   filter: none;
   border: solid black 5px;
 }
@@ -149,7 +161,9 @@ whenever they are hovered, they remove the filter making the images clear. */
 #work-links2,
 #work-links3,
 #work-links4,
-#work-links5 {
+#work-links5,
+#work-links6,
+#work-links7 {
   background-size: 'cover';
   background-position: 'top';
   min-height: 400px;
@@ -176,6 +190,14 @@ whenever they are hovered, they remove the filter making the images clear. */
   background-image: url(../public/weather.jpg);
 }
 
+#work-links6 {
+  background-image: url(../public/agenda.jpg);
+}
+
+#work-links7 {
+  background-image: url(../public/astrology.jpg);
+}
+
 footer {
   position: fixed;
   left: 0;
@@ -192,4 +214,187 @@ footer {
 #Contact-Me {
   margin-right: 0px;
   padding-right: 0px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    /* background-color: black; */
+    margin: 0;
+    padding: 0;
+  }
+  
+  #about-header,
+  #Work-Header,
+  #contact-header {
+   flex: 0 0 20%;
+   text-align: right;
+   padding-right: 15px;
+   border-right: 4px solid maroon;
+   font-size: 24px;
+   line-height: 1.1;
+  }
+  
+  #Work,
+  #Contact-Me,
+  #About-Me {
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+    margin-right: 0px;
+    margin-left: 60px;
+    padding-right: 0;
+  }
+  
+  /* This makes sure that the card tagged to the largest link will have a different height, width, and font size */
+  
+  #card1,
+  #card2,
+  #card3,
+  #card4,
+  #card5,
+  #card6,
+  #card7 {
+    height: 40px;
+    width: 40%;
+    font-size: 8px;
+    position: relative;
+    top: 75%;
+  }
+  
+  .work-links div h4{
+    margin-top: 10px;
+    font-size: 70%;
+    padding-bottom: 10px;
+    margin-left: 5px;
+  }
+  
+  #about-header,
+  #Work-Header {
+    text-align: center;
+  }
+
+  .work-links {
+    padding-left: 10px;
+  }
+  
+  
+  #work-links1,
+  #work-links2,
+  #work-links3,
+  #work-links4,
+  #work-links5,
+  #work-links6,
+  #work-links7 {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+    color: white;
+    filter: blur(.5px);
+    transition: .2s ease;
+    margin: 10px;
+    margin-right: 60px;
+  }
+  
+  /* The below code is adding a hover property to each image. Specifcally, each card is given a default "blur" filter set above, and
+  whenever they are hovered, they remove the filter making the images clear. */
+  
+  #work-links1:hover,
+  #work-links2:hover,
+  #work-links3:hover,
+  #work-links4:hover,
+  #work-links5:hover,
+  #work-links6:hover,
+  #work-links7:hover {
+    filter: none;
+    border: solid black 5px;
+  }
+  
+  /* The below code is specifiying a specifc size for the first image / link in the Work section to make it larger than the rest. */
+  
+  #work-links1 {
+    background-image: url(../public/exam-builder.jpg);
+  }
+  
+  #work-links1,
+  #work-links2,
+  #work-links3,
+  #work-links4,
+  #work-links5,
+  #work-links6,
+  #work-links7 {
+    background-size: 'cover';
+    background-position: 'top';
+    min-height: 200px;
+    min-width: 70%;
+    max-height: 200px;
+    max-width: 200px;
+  }
+  
+  /* The below three lines of code set background images for the different links. */
+  
+  #work-links2 {
+    background-image: url(../public/coding.jpg);
+  }
+  
+  #work-links3 {
+    background-image: url(../public/gnome-rogues.jpg);
+  }
+  
+  #work-links4 {
+    background-image: url(../public/note-taker.jpg);
+  }
+  
+  #work-links5 {
+    background-image: url(../public/weather.jpg);
+  }
+  
+  #work-links6 {
+    background-image: url(../public/agenda.jpg);
+  }
+  
+  #work-links7 {
+    background-image: url(../public/astrology.jpg);
+  }
+
+  /* ContactMe.jsx CSS */
+#name,
+#subject,
+#body {
+  width: 100px /* Adjust width as needed */
+}
+
+#name {
+  margin-top: 10px; /* Add margin top as needed */
+}
+
+label {
+  margin-right: 10px; /* Add margin right as needed */
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing */
+}
+
+button {
+  margin-top: 20px; /* Add margin top as needed */
+}
+
+  
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+
 }
